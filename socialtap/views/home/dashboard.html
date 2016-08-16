@@ -1,0 +1,62 @@
+
+<h1 style="text-align:center;color:	#8b9dc3"> Welcome to TapChief <button type="button" class="btn btn-primary"  ng-click="FBout()">Logout</button></h1>
+<div class="pull-right" style="margin-right:15%;">
+	<form>
+	
+</form>
+</div>
+
+<div class="dataContainer" style="border:1px solid black;width:50%;margin:0 auto;height:100%;background-color:#dfe3ee;color:#ccc">
+	
+<table class="table table-striped table-responsive">
+  
+  <tbody style="color:black">
+    <tr ng-show="userObj.name">
+    	<td>Name:</td>
+    	<td>{{userObj.name}}</td>
+    </tr>
+     <tr ng-show="userObj.birthday">
+    	<td>Birthday:</td>
+    	<td>{{userObj.birthday}}</td>
+    </tr>
+     <tr ng-show="userObj.id">
+    	<td>User ID:</td>
+    	<td>{{userObj.id}}</td>
+    </tr>
+    <tr ng-show="userObj.first_name">
+    	<td>First Name:</td>
+    	<td>{{userObj.first_name}}</td>
+    </tr>
+
+    <tr ng-show="userObj.last_name">
+    	<td>Last Name:</td>
+    	<td>{{userObj.last_name}}</td>
+    </tr>
+
+     <tr ng-show="userObj.gender">
+    	<td>Gender:</td>
+    	<td>{{userObj.gender}}</td>
+    </tr>
+
+    <tr ng-show="userObj.link">
+    	<td>Facebook Link:</td>
+    	<td><a ng-src="{{userObj.link}}">{{userObj.link}}</a></td>
+    </tr>
+
+     <tr ng-show="userObj.location">
+    	<td>LOcation:</td>
+    	<td>{{userObj.location.name}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div style="border:1px solid black;width:50%;margin:50px auto;height:100%;background-color:#dfe3ee;"><p style="text-align:center">Response we are getting from the API call is</p>
+<p style="text-align:center"><strong> {{userObj}}</strong></p></div>
+
+
+
+
+
+ 
